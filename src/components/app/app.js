@@ -3,6 +3,7 @@ import GlobalStyle from "../../assets/styles/globalStyle";
 import "../../assets/styles/fonts.css";
 import SignInPage from "../../pages/signInPage";
 import { AppContainer } from "./styled";
+import SignUpPage from "../../pages/signUpPage";
 
 export default function App(){
     return (
@@ -12,6 +13,7 @@ export default function App(){
             <BrowserRouter>
                 <Routes>
                     <Route exact path="/" element={<SignInPage/>} />
+                    <Route exact path="/cadastro" element={<SignUpPage/>} />
                 </Routes>
             </BrowserRouter>
         </AppContainer>
