@@ -13,7 +13,7 @@ export const StyledGrid = styled.div`
     padding: 0 10px;
     padding-top: 12px;
     margin: 0px auto;
-    height: 410px;
+    height: calc(100vh - 260px);
     width: 325px;
 
     overflow-y: scroll;

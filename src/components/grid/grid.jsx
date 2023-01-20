@@ -32,7 +32,7 @@ export default function Grid() {
         <>
             <StyledGrid>
                 {entries.length > 0? entries.map((e) => {
-                    <Row date={e.date} description={e.description} value={e.value} type={e.type} />
+                    return <Row date={e.date} description={e.description} value={e.value} type={e.type} />
                 }) : <StyledModalSpan>Não há registros de<br/>entrada ou saída</StyledModalSpan>}
             </StyledGrid>
             <StyledRowTotal>
