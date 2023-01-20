@@ -10,7 +10,7 @@ export const StyledHeader = styled.header`
 
     margin: 0 auto;
     height: 80px;
-    width: 375px;
+    width: 325px;
 `;
 
 export const StyledTitle = styled.h1`
