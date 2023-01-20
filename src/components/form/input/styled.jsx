@@ -34,4 +34,9 @@ export const StyledInput = styled.input`
         border-color: purple;
         box-shadow: 0 0 3px white;
     }
+
+    &:invalid{
+        border: 2px solid red;
+        box-shadow: 0 0 3px red;
+    }
 `;

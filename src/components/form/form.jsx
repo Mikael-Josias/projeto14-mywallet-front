@@ -1,9 +1,9 @@
 import { StyledForm } from "./styled";
 
-export default function Form(props) {
+export default function Form({submitFunction, children}) {
     return (
-        <StyledForm>
-            {props.children}
+        <StyledForm onSubmit={submitFunction}>
+            {children}
         </StyledForm>
     );
 }
