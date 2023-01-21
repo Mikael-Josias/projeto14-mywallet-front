@@ -6,8 +6,12 @@ import { AppContainer } from "./styled";
 import SignUpPage from "../../pages/signUpPage";
 import HomePage from "../../pages/homePage";
 import UserProvider from "../../context/userContext";
+import NewEntriePage from "../../pages/newEntriePage";
+import { useState } from "react";
 
 export default function App(){
+    const [entrieType, setEntrieType] = useState("");
+
     return (
         <UserProvider>
             <AppContainer>
@@ -17,7 +21,9 @@ export default function App(){
                     <Routes>
                         <Route exact path="/" element={<SignInPage/>} />
                         <Route exact path="/cadastro" element={<SignUpPage/>} />
-                        <Route exact path="/home" element={<HomePage/>} />
+                        <Route exact path="/home" element={<HomePage setEntrie={setEntrieType}/>} />
+                        <Route exact path="/nova-entrada" element={<NewEntriePage entrie={entrieType}/>} />
+                        <Route exact path="/nova-saida" element={<NewEntriePage entrie={entrieType}/>} />
                     </Routes>
                 </BrowserRouter>
             </AppContainer>
