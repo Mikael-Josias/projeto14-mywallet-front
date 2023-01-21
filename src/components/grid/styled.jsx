@@ -34,6 +34,7 @@ export const StyledRowTotal = styled.div`
 export const StyledSpan = styled.span`
     font-size: 17px;
     font-weight: ${props => props.bolder? "700" : "400"};
+    color: ${props => props.colored? props.colored : "black"}
 `;
 
 export const StyledModalSpan = styled.span`

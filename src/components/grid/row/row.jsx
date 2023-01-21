@@ -7,7 +7,7 @@ export default function Row({date, description, value, type}) {
                 <StyledDataText colored="#C6C6C6">{date}</StyledDataText>
                 <StyledDataText>{description}</StyledDataText>
             </div>
-            <StyledDataText colored={type === "entrie"? "#03AC00" : "#C70000"}>{value}</StyledDataText>
+            <StyledDataText colored={type === "incoming"? "#03AC00" : "#C70000"}>{value}</StyledDataText>
         </StyledRow>
     );
 }
